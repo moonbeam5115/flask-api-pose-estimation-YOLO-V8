@@ -1,0 +1,28 @@
+.container {
+    display: flex;
+    justify-content: center;
+}
+
+.columns {
+    text-align: center;
+}
+
+.panel-heading {
+    font-size: 1.5rem;
+}
+
+.input_video5 {
+    position:absolute;
+    z-index:1;
+    transform: rotateY(180deg);
+    -webkit-transform:rotateY(180deg); /* Safari and Chrome */
+    -moz-transform:rotateY(180deg); /* Firefox */
+}
+
+.output5 {
+    position: relative;
+    z-index: 10;
+    transform: rotateY(180deg);
+    -webkit-transform:rotateY(180deg); /* Safari and Chrome */
+    -moz-transform:rotateY(180deg); /* Firefox */
+}

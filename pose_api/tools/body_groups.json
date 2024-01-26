@@ -1,0 +1,12 @@
+{
+    "L_Knee-complex": ["Left-ankle", "Left-knee", "Left-hip"],
+    "R_Knee-complex": ["Right-ankle", "Right-knee", "Right-hip"],
+    "L_Hip-complex": ["Left-knee", "Left-hip", "Left-shoulder"],
+    "R_Hip-complex": ["Right-knee", "Right-hip", "Right-shoulder"],
+    "L_Shoulder-complex": ["Left-hip", "Left-shoulder", "Left-elbow"],
+    "R_Shoulder-complex": ["Right-hip", "Right-shoulder", "Right-elbow"],
+    "L_Elbow-complex": ["Left-shoulder", "Left-elbow", "Left-wrist"],
+    "R_Elbow-complex": ["Right-shoulder", "Right-elbow", "Right-wrist"],
+    "L_side": ["Left-ankle", "Left-knee", "Left-hip", "Left-shoulder", "Left-elbow", "Left-wrist"],
+    "R_side": ["Right-ankle", "Right-knee", "Right-hip", "Right-shoulder", "Right-elbow", "Right-wrist"]
+}

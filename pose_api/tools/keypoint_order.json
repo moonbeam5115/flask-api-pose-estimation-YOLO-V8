@@ -1,0 +1,19 @@
+{
+    "Nose": 0,
+    "Left-eye": 1,
+    "Right-eye": 2,
+    "Left-ear": 3,
+    "Right-ear": 4,
+    "Left-shoulder": 5,
+    "Right-shoulder": 6,
+    "Left-elbow": 7,
+    "Right-elbow": 8,
+    "Left-wrist": 9,
+    "Right-wrist": 10,
+    "Left-hip": 11,
+    "Right-hip": 12,
+    "Left-knee": 13,
+    "Right-knee": 14,
+    "Left-ankle": 15,
+    "Right-ankle": 16
+}
