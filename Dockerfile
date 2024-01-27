@@ -7,3 +7,4 @@ RUN git init
 RUN git pull https://github.com/moonbeam5115/flask-api-pose-estimation-YOLO-V8.git
 RUN bash ./venv/bin/activate
 RUN pip3 install --upgrade -r requirements.txt
+EXPOSE 5000
