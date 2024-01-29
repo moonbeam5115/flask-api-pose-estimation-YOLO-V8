@@ -7,6 +7,8 @@ import numpy as np
 from pose_api.tools.extract_kps_image import kps_extractor
 import base64
 import requests
+import json
+import os
 
 bp = Blueprint('image_pose_estimation', __name__)
 
@@ -23,13 +25,16 @@ def estimate_joint_angles_image():
 
             # image_bytes = np.fromstring(image_filestr, np.uint8)
             # img = cv2.imdecode(image_bytes, cv2.IMREAD_UNCHANGED)
-            image_url = request.image
+            json_string_url = request.data
+            image_url = json.loads(json_string_url)[0]['image']
             img_data = requests.get(image_url).content
             img_name = 'image_from_url.jpg'
             with open(f'{img_name}', 'wb') as handler:
                 handler.write(img_data)
             
-            kp_data = kps_extractor(image=f'./{img_name}')
+            image = cv2.imread(f'./{img_name}')
+            kp_data = kps_extractor(image=image)
+            
             print(kp_data)
 
             return kp_data

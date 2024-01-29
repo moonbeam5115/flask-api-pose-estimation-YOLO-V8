@@ -31,7 +31,7 @@ def kps_extractor(image):
         image = cv2.cvtColor(image, cv2.COLOR_BGRA2BGR)
         width, height, __channels = image.shape
         print('shape', image.shape)
-        results = pose_model(source=image, show=False, save=False, show_boxes=False)
+        results = pose_model(source=image, show=False, save=False, boxes=False)
         keypoint_data = {}
         frame_num = 0
 

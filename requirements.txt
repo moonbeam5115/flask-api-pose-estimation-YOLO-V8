@@ -46,4 +46,3 @@ tzdata==2023.4
 ultralytics==8.1.5
 urllib3==2.1.0
 Werkzeug==3.0.1
-.
