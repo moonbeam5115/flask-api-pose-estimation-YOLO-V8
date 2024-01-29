@@ -30,4 +30,4 @@ e.g., docker push moonbeam5115/flask-api-pose-estimation-yolo-v8:latest
 The run command will spin up a new container for you to use.
 The exec command will allow you to use a container that is already running.
 
-add more information to execute github repository
+add more info
