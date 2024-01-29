@@ -1,0 +1,56 @@
+{
+    "taskDefinitionArn": "arn:aws:ecs:us-east-1:168722741365:task-definition/flask-api-container-build-deploy-dev:1",
+    "containerDefinitions": [
+        {
+            "name": "flask-api-pose-container",
+            "image": "moonbeam5115/flask-api-pose-estimation-yolo-v8:latest",
+            "cpu": 0,
+            "portMappings": [
+                {
+                    "name": "flask-api-pose-container-5000-tcp",
+                    "containerPort": 5000,
+                    "hostPort": 5000,
+                    "protocol": "tcp",
+                    "appProtocol": "http"
+                }
+            ],
+            "essential": true,
+            "environment": [],
+            "environmentFiles": [],
+            "mountPoints": [],
+            "volumesFrom": [],
+            "ulimits": []
+        }
+    ],
+    "family": "flask-api-container-build-deploy-dev",
+    "executionRoleArn": "arn:aws:iam::168722741365:role/ecsTaskExecutionRole",
+    "networkMode": "awsvpc",
+    "revision": 1,
+    "volumes": [],
+    "status": "ACTIVE",
+    "requiresAttributes": [
+        {
+            "name": "com.amazonaws.ecs.capability.docker-remote-api.1.18"
+        },
+        {
+            "name": "ecs.capability.task-eni"
+        }
+    ],
+    "placementConstraints": [],
+    "compatibilities": [
+        "EC2",
+        "FARGATE"
+    ],
+    "requiresCompatibilities": [
+        "EC2"
+    ],
+    "cpu": "1024",
+    "memory": "3072",
+    "runtimePlatform": {
+        "cpuArchitecture": "X86_64",
+        "operatingSystemFamily": "LINUX"
+    },
+    "registeredAt": "2024-01-29T02:21:13.404Z",
+    "registeredBy": "arn:aws:iam::168722741365:root",
+    "tags": []
+}
